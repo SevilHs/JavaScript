@@ -6,36 +6,40 @@ let subsractBtn = document.querySelector("#substract-btn");
 let multiplyBtn = document.querySelector("#multiply-btn");
 let divisionBtn = document.querySelector("#division-btn");
 let resetBtn = document.querySelector("#reset-btn");
-let allBtn= document.querySelectorAll('.same')
+
 
 result.innerHTML = 0;
 
 additionBtn.addEventListener("click", function () {
-  result.innerHTML = +value1.value + +value2.value;});
+  result.innerHTML = +value1.value + +value2.value;
+  if (value1.value === "" || value2.value === "") {
+    alert("Please add value !");
+  }
+});
 
 subsractBtn.addEventListener("click", function () {
-  result.innerHTML = +value1.value - +value2.value;});
+  result.innerHTML = +value1.value - +value2.value;
+  if (value1.value === "" || value2.value === "") {
+    alert("Please add value !");
+  }
+});
 
 multiplyBtn.addEventListener("click", function () {
-  result.innerHTML = +value1.value * +value2.value;});
+  result.innerHTML = +value1.value * +value2.value;
+  if (value1.value === "" || value2.value === "") {
+    alert("Please add value !");
+  }
+});
 
 divisionBtn.addEventListener("click", function () {
   result.innerHTML = +value1.value / +value2.value;
-  if (value1.value==='' || value2.value==='') {
-    result.innerHTML='0'}
-
+  if (value1.value === "" || value2.value === "") {
+    alert("Please add value !");
+    result.innerHTML = "0";
+  }
 });
 
 resetBtn.addEventListener("click", function () {
   result.innerHTML = "0";
   value1.value = "";
-  value2.value = "";
-});
-
-allBtn.forEach(item=>
-  item.addEventListener('click',function(){
-    if (value1.value==='' || value2.value==='') {
-      alert('Please add value !')
-    }
-  })
-  )
+  value2.value = "";});
