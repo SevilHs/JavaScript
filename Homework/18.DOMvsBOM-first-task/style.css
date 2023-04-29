@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+button{
+    border: none;
+    margin-top: 20px;
+}
+.start-stop{
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.startbtn{
+    background-color: rgb(238, 238, 104);
+    margin-right: 50px;
+}
+.stopbtn{
+    background-color: rgb(222, 135, 189);
+    margin-left: 50px;
+}
+span{
+    font-size: 18px;
+    padding: 0;
+}
+.samebtn{
+    background-color: rgb(147, 71, 191);
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+}
+.incrementbtn{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.resetbtn{
+    color: #fff;
+    background-color: rgb(104, 245, 132);
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.inputvalue{
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 2px;
+}
+.inputbtn{
+    height: 30px;
+    background-color: rgb(254, 217, 217);
+    font-size: 18px;
+    padding: 5px 30px;
+    cursor: pointer;
+}
