@@ -1,6 +1,6 @@
 # JavaScript
 ## Deployed Tasks:
-#### Homework
+#### Homework:
 * 14.Loop and if,else statement: https://silver-bonbon-766ebe.netlify.app/
 * 15.Function: https://verdant-begonia-0c7edc.netlify.app/
 * 16.Arrays: https://unrivaled-gelato-e2fc60.netlify.app/
