@@ -6,37 +6,23 @@ let subsractBtn = document.querySelector("#substract-btn");
 let multiplyBtn = document.querySelector("#multiply-btn");
 let divisionBtn = document.querySelector("#division-btn");
 let resetBtn = document.querySelector("#reset-btn");
-let allBtn= document.querySelectorAll('button')
+let allBtn= document.querySelectorAll('.same')
 
 result.innerHTML = 0;
 
 additionBtn.addEventListener("click", function () {
-  result.innerHTML = +value1.value + +value2.value;
-  if (value1.value==='' || value2.value==='') {
-    alert('Please add value !')
-  }
-});
+  result.innerHTML = +value1.value + +value2.value;});
 
 subsractBtn.addEventListener("click", function () {
-  result.innerHTML = +value1.value - +value2.value;
-  if (value1.value==='' || value2.value==='') {
-    alert('Please add value !')
-  }
-});
+  result.innerHTML = +value1.value - +value2.value;});
 
 multiplyBtn.addEventListener("click", function () {
-  result.innerHTML = +value1.value * +value2.value;
-  if (value1.value==='' || value2.value==='') {
-    alert('Please add value !')
-  }
-});
+  result.innerHTML = +value1.value * +value2.value;});
 
 divisionBtn.addEventListener("click", function () {
   result.innerHTML = +value1.value / +value2.value;
   if (value1.value==='' || value2.value==='') {
-    alert('Please add value !')
-    result.innerHTML='0'
-  }
+    result.innerHTML='0'}
 
 });
 
@@ -45,3 +31,11 @@ resetBtn.addEventListener("click", function () {
   value1.value = "";
   value2.value = "";
 });
+
+allBtn.forEach(item=>
+  item.addEventListener('click',function(){
+    if (value1.value==='' || value2.value==='') {
+      alert('Please add value !')
+    }
+  })
+  )
