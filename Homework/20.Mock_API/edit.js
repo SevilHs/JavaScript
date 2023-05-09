@@ -10,13 +10,22 @@ const url = "http://localhost:8000/users";
 //   .then((res) => res.json())
 //   .then((data) => console.log(data));
 
+function button() {
+  userName.value && userEmail.value ? editBtn.disabled=false : editBtn.disabled=true
+}
+userName.addEventListener('input',()=>{
+  button()
+})
+userEmail.addEventListener('input',()=>{
+  button()
+})
+
 userName.value = user.username;
 userEmail.value = user.email;
 
 editBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (userName.value && userEmail.value) {
-
     fetch(`${url}/${user.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
@@ -26,7 +35,5 @@ editBtn.addEventListener("click", (e) => {
         }),
       });
       window.location='index.html'
-  }else{
-    alert('Please fill in the blank field')
   }
 });
