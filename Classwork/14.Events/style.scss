@@ -1,0 +1,19 @@
+body{
+    form{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 2px dashed green;
+        #checked{
+            visibility: hidden;
+        }
+        div{
+            input{
+                accent-color: blue;
+            }
+        }
+    }
+}

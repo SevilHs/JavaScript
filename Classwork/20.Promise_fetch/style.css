@@ -1,0 +1,23 @@
+section {
+  width: 900px;
+  margin: 10px auto;
+  padding: 8px;
+  outline: none;
+}
+section table {
+  width: 100%;
+  max-width: 900px;
+  margin: 2px auto;
+  border-collapse: collapse;
+}
+section table tr th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: cadetblue;
+}
+section table tr td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

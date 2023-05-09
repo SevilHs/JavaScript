@@ -1,0 +1,15 @@
+body form {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px dashed green;
+}
+body form #checked {
+  visibility: hidden;
+}
+body form div input {
+  accent-color: blue;
+}/*# sourceMappingURL=style.css.map */
