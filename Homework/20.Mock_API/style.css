@@ -1,0 +1,14 @@
+.container .row button {
+  width: 120px;
+}
+.container .row #allcards {
+  gap: 15px;
+}
+.container .row #allcards #card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 20px;
+  align-items: center;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */

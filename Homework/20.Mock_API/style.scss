@@ -1,0 +1,18 @@
+.container{
+    .row{
+        button{
+            width: 120px;
+        }
+        #allcards{
+            gap: 15px;
+            #card{
+                display: flex;
+                justify-content: space-between;
+                background-color: #ddd;
+                padding: 20px;
+                align-items: center;
+                border-radius: 5px;
+            }
+        }
+        }
+}
