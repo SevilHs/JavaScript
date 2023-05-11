@@ -1,0 +1,24 @@
+section {
+  color: #fff;
+  background-color: #1d2630;
+}
+
+#thFirstName {
+  cursor: pointer;
+}
+
+.arrow-down {
+  display: none;
+}
+
+.arrow-up {
+  display: none;
+}
+
+#notification {
+  display: none;
+  background-color: burlywood;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
