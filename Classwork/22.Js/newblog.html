@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <header>
+          <h1 class="headerTitle">The Blog Website</h1>
+          <div>
+            <a href="home.html">Home</a>
+            <a href="newblog.html">New Blog</a>
+          </div>
+        </header>
+        <div class="formdiv">
+          <form>
+            <h1 class="formh1">Add a New Blog</h1>
+            <label for="">Blog Title:</label>
+            <input type="text" id="title" />
+            <label for="">Blog body:</label>
+            <textarea name="" id="textareaBody" cols="50" rows="5"></textarea>
+            <label for="">Blog Author:</label>
+            <select name="" id="selectAuthor">
+              <option value="">select author</option>
+              <option value="lorem">Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+            </select>
+            <button class="addBtn">Add Blog</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./newblog.js"></script>
+  </body>
+</html>
+

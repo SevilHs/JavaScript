@@ -1,0 +1,100 @@
+* {
+  text-decoration: none;
+  margin: 0;
+}
+
+header {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerTitle {
+  color: brown;
+}
+header a {
+  color: gray;
+}
+header div {
+  display: flex;
+  gap: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.allCards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 100px;
+}
+
+.card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.card h1 {
+  color: rgb(24, 24, 43);
+}
+.card p {
+  font-weight: bold;
+  font-size: 17px;
+  color: brown;
+}
+.card span {
+  color: gray;
+}
+.card button {
+  background-color: brown;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  width: 80px;
+  border: none;
+}
+
+.formdiv {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formdiv form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.formdiv form input {
+  outline: none;
+}
+.formdiv form textarea {
+  outline: none;
+}
+.formdiv form h1 {
+  text-align: center;
+  color: brown;
+}
+.formdiv form .addBtn {
+  background-color: brown;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  width: 80px;
+  border: none;
+}
+
+.editbtn {
+  background-color: chocolate;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 60px;
+  border-radius: 10px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
