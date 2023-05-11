@@ -92,13 +92,13 @@ function editUser(id) {
 }
 
 searchInput.addEventListener("input", (event) => {
-    // console.log(allData);
-    filtered = allData.filter((item) => {
-    item.firstName
-      .toLocaleLowerCase()
-      .includes(event.target.value.toLocaleLowerCase());
+  axios(url).then((res) => {
+    filtered = res.data.filter((item) => 
+      item.firstName
+        .toLocaleLowerCase()
+        .includes(event.target.value.toLocaleLowerCase())
+    );
+    allData = filtered;
+    drawTable();
   });
-  allData=filtered
-  drawTable();
-  console.log(filtered);
 });
