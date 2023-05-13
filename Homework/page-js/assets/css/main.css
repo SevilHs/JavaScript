@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 3%;
+  margin: 0 auto;
+}
+
+.section1 {
+  background-image: url(../../images/desktop/image-hero.jpg);
+  background-color: #000;
+  height: 100vh;
+}
+.section1 .container header {
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .container header ul {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+}
+.section1 .container header ul li a {
+  color: #fff;
+  font-family: "Alata", sans-serif;
+}
+.section1 .container header .menuBtn {
+  display: none;
+}
+.section1 .container .section1-text {
+  height: 80vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.section1 .container .section1-text .section1-content {
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 72px;
+  max-height: 350px;
+  max-width: 650px;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 991px) {
+  .section1 .container header ul {
+    display: none;
+  }
+  .section1 .container header .menuBtn {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+  .section1 .container .section1-text .section1-content {
+    font-size: 45px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
