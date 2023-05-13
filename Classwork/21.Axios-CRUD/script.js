@@ -35,8 +35,7 @@ async function getAllData() {
         <td>
             <a class="btn btn-warning" onclick=editUser(${element.id})>Edit</a>
             <a class="btn btn-danger" onclick=deleteUser(${element.id},this)>Delete</a>
-            <a class="btn btn-success" onclick=detailsUser(${element.id})>Details</a>
-            <a class="btn btn-success" onclick=detailsUser2(${element.firstName},${element.date})>Details</a>
+            <a class="btn btn-success" onclick=detailsUser("${element.firstName}","${element.date}")>Details</a>
         </td>
     `;
     tBody.append(tr);
@@ -138,16 +137,6 @@ thFirstName.addEventListener("click", () => {
   }
 });
 
-async function detailsUser(id) {
-  const res = await axios(`${BASE_URL}/${id}`);
-  const data = await res.data;
-  showNotification(
-    "cadetblue",
-    `User ${data.firstName} has been created on- ${data.date} `
-  );
-  //  axios(`${BASE_URL}/${id}`).then(res=>console.log(res.data.firstName));
-}
-
-function detailsUser2(fname,date) {
+function detailsUser(fname,date) {
     showNotification('cadetblue',`User ${fname} has been created on- ${date} `)
 }
