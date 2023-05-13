@@ -24,7 +24,7 @@
     <section>
       <div class="container">
         <h1 class="text-center mb-5 pt-5">JS CRUD</h1>
-        <div id="notification" role="alert"></div>
+        <div id="notification" role="alert" hidden></div>
         <div class="main row justify-content-center">
           <form
             id="userForm"
@@ -59,6 +59,17 @@
               />
             </div>
             <div class="col-10 col-md-8 mb-3">
+                <label for="cardNumber">Card</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cardNumber"
+                  maxlength="16"
+                  minlength="8"
+                  placeholder="xxxx-xxxx-xxxx-xxxx"
+                />
+              </div>
+            <div class="col-10 col-md-8 mb-3">
               <input
                 type="submit"
                 class="form-control w-25 btn-success"
@@ -75,20 +86,27 @@
               placeholder="Search to First Name..."
             />
             <table class="table table-striped table-dark">
-                <thead>
-                    <tr>
-                        <th id="thFirstName">
-                            <i class="fa-solid fa-arrow-up arrow-up" style="color: #277737;"></i>
-                            <i class="fa-sharp fa-solid fa-arrow-down arrow-down" style="color: #b22e24;"></i>
-                            First Name
-                        </th>
-                        <th id="thLastName">Last Name</th>
-                        <th>Email</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="tBody">
-                    <!-- <tr>
+              <thead>
+                <tr>
+                  <th id="thFirstName">
+                    <i
+                      class="fa-solid fa-arrow-up arrow-up"
+                      style="color: #277737"
+                    ></i>
+                    <i
+                      class="fa-sharp fa-solid fa-arrow-down arrow-down"
+                      style="color: #b22e24"
+                    ></i>
+                    First Name
+                  </th>
+                  <th id="thLastName">Last Name</th>
+                  <th>Email</th>
+                  <th>Card Number</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tBody">
+                <!-- <tr>
                         <td>kjhjgfdghj</td>
                         <td>jfk</td>
                         <td>jhb@gmail.com</td>
@@ -97,7 +115,7 @@
                             <a class="btn btn-danger">Delete</a>
                         </td>
                     </tr> -->
-                </tbody>
+              </tbody>
             </table>
           </div>
         </div>
