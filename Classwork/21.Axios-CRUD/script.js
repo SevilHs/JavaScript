@@ -74,7 +74,7 @@ form.addEventListener("submit", (e) => {
   };
   //   console.log(obj);
   if (!firstName.value || !lastName.value || !email.value || !cardNum.value) {
-    showNotification("burlywood", "Please fill in the fields");
+    showNotification("burlywood", "Please fill in the field");
   } else if (isEdited) {
     // console.log(editId);
     axios.patch(`${BASE_URL}/${editId}`, obj).then((res) => {
