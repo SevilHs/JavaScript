@@ -381,6 +381,9 @@ footer .footer .footer-right .footer-content {
     font-size: 30px;
   }
 }
+.section3 {
+  margin: 5% 0;
+}
 .section3 .container .creations-text {
   display: flex;
   justify-content: space-between;
