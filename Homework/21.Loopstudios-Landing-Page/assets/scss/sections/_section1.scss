@@ -1,0 +1,81 @@
+.section1 {
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // height: 100vh;
+  .container {
+    .section1-text {
+      height: 85vh;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      .section1-content {
+        border: 1px solid $color-white;
+        color: $color-white;
+        font-family: $primary-font-family;
+        font-size: 72px;
+        max-height: 350px;
+        max-width: 650px;
+        padding: 5%;
+        .section1-menu-content {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.section1-menu {
+  background-color: $color-black;
+  .container {
+    .section1-text {
+      height: 85vh;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      .section1-content {
+        border: none;
+        color: $color-white;
+        font-family: $primary-font-family;
+        font-size: 60px;
+        max-height: 350px;
+        max-width: 650px;
+        padding: 5%;
+        span {
+          display: none;
+        }
+        .section1-menu-content {
+          display: block;
+          li {
+            a {
+              color: $color-white;
+              position: relative;
+              &:hover::after{
+                content: "";
+                color: $color-white !important;
+                background-color: $color-white;
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section1 {
+    .container {
+      .section1-text {
+        .section1-content {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}
