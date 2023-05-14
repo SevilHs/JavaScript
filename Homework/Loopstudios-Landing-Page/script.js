@@ -17,8 +17,12 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-// menuBtn.addEventListener('click',()=>{
-//     section1.classList.toggle('section1-menu')
-// })
+document.addEventListener("contextmenu", (e) => e.preventDefault());
 
+document.addEventListener("keydown", (e) => {
+  if (e.ctrlKey || e.keyCode == 123) {
+    e.stopPropagation();
+    e.preventDefault();
+  }
+});
 
