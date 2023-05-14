@@ -9,4 +9,4 @@
 * 18.DOMvsBOM-first-task: https://spectacular-raindrop-10d5f4.netlify.app/
 * 19.Calculator: https://teal-palmier-862a23.netlify.app/
 * 19.Table: https://cerulean-crumble-b214c4.netlify.app/
-* Loopstudios-Landing-Page: https://wonderful-douhua-cad41e.netlify.app/
+* 21.Loopstudios-Landing-Page: https://splendid-croissant-f49254.netlify.app/
