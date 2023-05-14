@@ -1,0 +1,14 @@
+%primary-button {
+  padding: 20px 45px;
+  border: 1px solid $color-black;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: $secondary-font-family;
+  background-color: transparent;
+  color: $color-black;
+  letter-spacing: 2px;
+  &:hover{
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
