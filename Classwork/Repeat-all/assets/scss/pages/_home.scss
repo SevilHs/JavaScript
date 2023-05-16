@@ -1,0 +1,198 @@
+// SECTION-1
+
+.menu-list {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 852;
+  i {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    li {
+      a {
+        color: white;
+        font-size: 25px;
+      }
+    }
+  }
+}
+    
+
+.sec1 {
+  background-image: url(../images/sec1-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  header {
+    background-color: #ffe4c4;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    .header {
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul {
+          display: flex;
+          gap: 80px;
+          margin: 0;
+          padding: 0;
+          li {
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 7px;
+            a {
+              color: #000;
+              font-size: 18px;
+            }
+            &:hover {
+              border: 1px solid #000;
+              a {
+                color: brown;
+              }
+            }
+          }
+        }
+        .menu-btn {
+          display: none;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    header {
+      .header {
+        nav {
+          justify-content: space-around;
+          ul {
+            display: none;
+          }
+          .menu-btn {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    background-image: url("../images/sec1-mobile.jpg");
+    header {
+      background-color: #000;
+      nav {
+        h4 {
+          color: white;
+        }
+        .menu-btn {
+          color: white !important;
+        }
+      }
+    }
+  }
+}
+
+// SECTION 2
+
+.sec2-all {
+  .text {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    h1 {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: brown;
+        height: 2px;
+        width: 100%;
+        bottom: -15px;
+      }
+    }
+  }
+  table {
+    tbody {
+      div {
+        button {
+          margin: 0;
+        }
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+      }
+    }
+  }
+  .all-cards {
+    display: none;
+    .card {
+      &:nth-child(odd) {
+        background-color: #eaeaea;
+      }
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      padding: 3%;
+      .id-date {
+        margin-bottom: 10px;
+        #id {
+          color: darkslateblue;
+        }
+        #date {
+          color: rgb(19, 193, 19);
+        }
+      }
+      .img-text {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: center;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+        }
+      }
+      .buttons {
+        position: absolute;
+        right: 3%;
+        bottom: 10%;
+        button {
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    table {
+      display: none;
+    }
+    .all-cards {
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .all-cards {
+      .card {
+        .img-text {
+          margin-bottom: 40px;
+        }
+        .buttons {
+          left: 60px;
+        }
+      }
+    }
+  }
+}
