@@ -10,7 +10,7 @@ async function getAllDetails() {
 //   console.log(data);
   row.innerHTML = `
     <div class="col col-6">
-        <img src="${data.flags.svg}" alt="" class="detail-img />
+        <img src="${data.flags.svg}" alt="" class="detail-img" />
     </div>
     <div class="col col-6">
         <h1>${data.name.common}</h1>

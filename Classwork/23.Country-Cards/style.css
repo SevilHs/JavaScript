@@ -2,40 +2,27 @@
   text-decoration: none !important;
 }
 
-header {
+body header {
   padding: 1% 0;
 }
-header .header {
+body header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .header .header-text.dark-text {
-  color: #fff;
-}
-header .header button {
+body header .header button {
   border: none;
   background-color: transparent;
 }
-header .header button .header-text2.dark-text {
-  color: #fff;
-}
-header.dark-header {
-  background-color: #2b3844;
-}
-
-.sec1-index {
+body .sec1-index {
   background-color: #f2f2f2;
   padding: 2% 0;
 }
-.sec1-index .search-filter {
+body .sec1-index .search-filter {
   display: flex;
   justify-content: space-between;
 }
-.sec1-index .search-filter span.dark-icon {
-  background-color: #2b3844;
-}
-.sec1-index .search-filter input {
+body .sec1-index .search-filter input {
   width: 400px;
   border: 1px solid #c9c9ca;
   border-top-right-radius: 5px;
@@ -44,45 +31,51 @@ header.dark-header {
   padding: 10px;
   outline: none;
 }
-.sec1-index .search-filter input.dark-input {
-  background-color: #2b3844;
-  color: #fff;
-}
-.sec1-index .form-select {
+body .sec1-index .form-select {
   width: 200px;
   height: 45.6px;
 }
-.sec1-index .form-select.dark-select {
-  background-color: #2b3844;
-  color: #fff;
-}
-.sec1-index .all-cards .row {
+body .sec1-index .all-cards .row {
   justify-content: space-between;
 }
-.sec1-index .all-cards .row a {
+body .sec1-index .all-cards .row a {
   width: 300px !important;
   margin-bottom: 40px;
 }
-.sec1-index .all-cards .row a .col .card {
+body .sec1-index .all-cards .row a .col .card {
   width: 300px;
   height: 380px;
 }
-.sec1-index .all-cards .row a .col .card img {
+body .sec1-index .all-cards .row a .col .card img {
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.sec1-index .all-cards .row a .col .card .card-body {
+body .sec1-index .all-cards .row a .col .card .card-body {
   color: black;
 }
-.sec1-index .all-cards .row a .col .card .card-body.dark-text {
-  color: #fff !important;
-}
-.sec1-index .all-cards .row a .col .card.dark-card {
+body.dark-mode header {
   background-color: #2b3844;
 }
-.sec1-index.dark-sec {
+body.dark-mode header .header .header-text {
+  color: #fff;
+}
+body.dark-mode header .header button .header-text2 {
+  color: #fff;
+}
+body.dark-mode .sec1-index {
   background-color: #202c36;
+}
+body.dark-mode .sec1-index .search-filter span {
+  background-color: #2b3844;
+}
+body.dark-mode .sec1-index .search-filter input {
+  background-color: #2b3844;
+  color: #fff;
+}
+body.dark-mode .sec1-index .form-select {
+  background-color: #2b3844;
+  color: #fff;
 }
 
 .detail-img {

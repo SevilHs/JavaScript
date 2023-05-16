@@ -3,16 +3,8 @@ const Base_URL = "https://restcountries.com/v2/all";
 let row = document.querySelector(".row");
 let input = document.querySelector("#input-country");
 let select = document.querySelector("select");
-let darkMoodBtn = document.querySelector("#dark-mood");
-let header = document.querySelector("header");
-let sec1 = document.querySelector(".sec1-index");
-let formSelect = document.querySelector(".form-select");
-let searchBtn = document.querySelector("#search-btn");
-let card = document.querySelector(".card");
-let cardBody = document.querySelector(".card-body");
-let headerText = document.querySelector(".header-text");
-let moonİcon = document.querySelector(".fa-moon");
-let headerText2 = document.querySelector(".header-text2");
+let darkModeBtn = document.querySelector("#dark-mood");
+
 let filtered = [];
 
 async function getAllData(arr) {
@@ -60,26 +52,15 @@ select.addEventListener("change", () => {
   });
 });
 
-darkMoodBtn.addEventListener("click", () => {
-  header.classList.toggle("dark-header");
-  sec1.classList.toggle("dark-sec");
-  formSelect.classList.toggle("dark-select");
-  input.classList.toggle("dark-input");
-  searchBtn.classList.toggle("dark-icon");
-  headerText.classList.toggle("dark-text");
-  headerText2.classList.toggle("dark-text");
-  if (moonİcon.classList.contains("fa-solid")) {
-    moonİcon.classList.add("fa-regular");
-    moonİcon.classList.remove("fa-solid");
-    moonİcon.style.color = "#fff";
-  } else {
-    moonİcon.classList.remove("fa-regular");
-    moonİcon.classList.add("fa-solid");
-    moonİcon.style.color = "#000";
-  }
-  // cardBody.classList.toggle("dark-text");
-  // card.classList.toggle("dark-card");
-  localStorage.setItem("dark",JSON.stringify("mode"));
-});
-
-
+window.onload = function () {
+  localStorage.getItem("dark") && document.body.classList.add("dark-mode");
+  darkModeBtn.addEventListener("click", () => {
+    if (localStorage.getItem("dark")) {
+      localStorage.removeItem("dark");
+      document.body.classList.remove("dark-mode");
+    } else {
+      document.body.classList.add("dark-mode");
+      localStorage.setItem("dark", "mode");
+    }
+  });
+};
