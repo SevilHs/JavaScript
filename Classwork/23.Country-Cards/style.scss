@@ -1,0 +1,112 @@
+* {
+  text-decoration: none !important;
+}
+header {
+  padding: 1% 0;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-text{
+      &.dark-text{
+        color: #fff;
+      }
+    }
+    button {
+      border: none;
+      background-color: transparent;
+      .header-text2{
+        &.dark-text{
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.dark-header {
+    background-color: #2b3844;
+  }
+}
+.sec1-index {
+  background-color: #f2f2f2;
+  padding: 2% 0;
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    span{
+      &.dark-icon{
+        background-color: #2b3844;
+      }
+    }
+    input {
+      width: 400px;
+      border: 1px solid #c9c9ca;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: white;
+      padding: 10px;
+      outline: none;
+      &.dark-input{
+        background-color: #2b3844;
+        color: #fff;
+      }
+    }
+  }
+  .form-select {
+    width: 200px;
+    height: 45.6px;
+    &.dark-select{
+      background-color: #2b3844;
+      color: #fff;
+    }
+  }
+  .all-cards {
+    .row {
+      justify-content: space-between;
+      a {
+        width: 300px !important;
+        margin-bottom: 40px;
+        .col {
+          .card {
+            width: 300px;
+            height: 380px;
+            img{
+              height: 180px;
+              object-fit: cover;
+            }
+            .card-body{
+              color: black;
+              &.dark-text{
+                color: #fff !important;
+              }
+            }
+            &.dark-card{
+              background-color: #2b3844;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.dark-sec {
+    background-color: #202c36;
+  }
+}
+
+// DETAIL
+
+.detail-img {
+  width: 460px;
+}
+.border {
+  border: 1px solid #c9c9ca;
+  padding: 3px 20px;
+  border-radius: 5px;
+}
+.back-btn {
+  background-color: rgb(101, 92, 142);
+  padding: 7px 40px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
