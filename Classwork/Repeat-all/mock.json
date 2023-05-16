@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "photo": "./assets/images/alfredo.jpg",
+      "name": "Vladimir",
+      "surname": "Alexander",
+      "email": "pipy@mailinator.com",
+      "date": "2023-05-16T09:38:00.762Z",
+      "id": 11
+    },
+    {
+      "photo": "./assets/images/alfredo.jpg",
+      "name": "Gillian",
+      "surname": "Maddox",
+      "email": "hujoxob@mailinator.com",
+      "date": "2023-05-16T09:56:27.766Z",
+      "id": 12
+    },
+    {
+      "photo": "./assets/images/remy.jpg",
+      "name": "Alvin",
+      "surname": "Gilmore",
+      "email": "pocuvoxi@mailinator.com",
+      "date": "2023-05-16T09:56:41.762Z",
+      "id": 13
+    }
+  ]
+}
