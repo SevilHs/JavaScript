@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1% 3%;
+  box-sizing: border-box;
+}
+
+.menu-list {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 852;
+}
+.menu-list i {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.menu-list ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.menu-list ul li a {
+  color: white;
+  font-size: 25px;
+}
+
+.sec1 {
+  background-image: url(../images/sec1-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.sec1 header {
+  background-color: #ffe4c4;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+.sec1 header .header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec1 header .header nav ul {
+  display: flex;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
+}
+.sec1 header .header nav ul li {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+.sec1 header .header nav ul li a {
+  color: #000;
+  font-size: 18px;
+}
+.sec1 header .header nav ul li:hover {
+  border: 1px solid #000;
+}
+.sec1 header .header nav ul li:hover a {
+  color: brown;
+}
+.sec1 header .header nav .menu-btn {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .sec1 header .header nav {
+    justify-content: space-around;
+  }
+  .sec1 header .header nav ul {
+    display: none;
+  }
+  .sec1 header .header nav .menu-btn {
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sec1 {
+    background-image: url("../images/sec1-mobile.jpg");
+  }
+  .sec1 header {
+    background-color: #000;
+  }
+  .sec1 header nav h4 {
+    color: white;
+  }
+  .sec1 header nav .menu-btn {
+    color: white !important;
+  }
+}
+
+.sec2-all .text {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.sec2-all .text h1 {
+  position: relative;
+}
+.sec2-all .text h1::before {
+  position: absolute;
+  content: "";
+  background-color: brown;
+  height: 2px;
+  width: 100%;
+  bottom: -15px;
+}
+.sec2-all table tbody div button {
+  margin: 0;
+}
+.sec2-all table tbody img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.sec2-all .all-cards {
+  display: none;
+}
+.sec2-all .all-cards .card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 3%;
+}
+.sec2-all .all-cards .card:nth-child(odd) {
+  background-color: #eaeaea;
+}
+.sec2-all .all-cards .card .id-date {
+  margin-bottom: 10px;
+}
+.sec2-all .all-cards .card .id-date #id {
+  color: darkslateblue;
+}
+.sec2-all .all-cards .card .id-date #date {
+  color: rgb(19, 193, 19);
+}
+.sec2-all .all-cards .card .img-text {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+}
+.sec2-all .all-cards .card .img-text img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.sec2-all .all-cards .card .buttons {
+  position: absolute;
+  right: 3%;
+  bottom: 10%;
+}
+.sec2-all .all-cards .card .buttons button {
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .sec2-all table {
+    display: none;
+  }
+  .sec2-all .all-cards {
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sec2-all .all-cards .card .img-text {
+    margin-bottom: 40px;
+  }
+  .sec2-all .all-cards .card .buttons {
+    left: 60px;
+  }
+}
+
+button {
+  margin-top: 5%;
+}
+
+.all-form {
+  margin: 5% auto;
+  max-width: 500px;
+}
+.all-form form div {
+  padding: 0;
+}
+.all-form form button {
+  background-color: #28a745;
+  border-color: #28a745;
+}/*# sourceMappingURL=main.css.map */

@@ -37,5 +37,5 @@ form.addEventListener("submit", (e) => {
   } else {
     axios.post(BASE_URL, obj);
   }
-  window.location = "./index.html";
+  window.location = "index.html";
 });
