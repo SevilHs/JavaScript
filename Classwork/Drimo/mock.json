@@ -1,0 +1,25 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "photo": "./assets/images/st-blog-1.jpg",
+      "name": "Professional Website Hosting ",
+      "description": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+      "price": 15
+    },
+    {
+      "id": 2,
+      "photo": "./assets/images/st-blog-2.jpg",
+      "name": "Latest News Website",
+      "description": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+      "price": 30
+    },
+    {
+      "id": 3,
+      "photo": "./assets/images/st-blog-3.jpg",
+      "name": "Happy Client ",
+      "description": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+      "price": 5
+    }
+  ]
+}

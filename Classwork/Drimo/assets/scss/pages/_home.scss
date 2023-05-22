@@ -1,0 +1,210 @@
+//////////////// HOME-SECTION ////////////
+
+.home-section {
+  margin-top: 82px;
+  background-image: url("../images/server-banner.jpg");
+  // height: 100vh;
+  padding: 14% 0;
+  display: flex;
+  align-items: center;
+  .all-home {
+    display: flex;
+    align-items: center;
+    .home-left {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h1 {
+        font-size: 50px;
+        // span {
+        //   position: relative;
+        //   &::after {
+        //     content: "Special Offer Now $10";
+        //     font-size: 36px;
+        //     position: absolute;
+        //     background-color: #fc6428;
+        //     width: 500px;
+        //     padding: 20px;
+        //     text-align: center;
+        //     bottom: 100px;
+        //     right: 90px;
+        //   }
+        // }
+      }
+      .text-2 {
+        font-size: 36px;
+        font-weight: 300;
+      }
+      .text-3 {
+        font-size: 18px;
+      }
+      .text-checked {
+        display: flex;
+        gap: 30px;
+        i {
+          margin-right: 5px;
+        }
+      }
+      .started-btn {
+        background-color: #fc6428;
+        padding: 10px;
+        font-size: 19px;
+        color: white;
+        border: none;
+        width: 150px;
+      }
+    }
+    .home-right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .all-home {
+      flex-direction: column;
+      .home-left {
+        h1 {
+          span {
+            &::after {
+              font-size: 15px;
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////// SERVICE-SECTION ///////////
+
+.service-section {
+  .all-service {
+    padding: 5% 0;
+    text-align: center;
+    h2 {
+      font-weight: 300;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 50px;
+      &::after {
+        content: "";
+        background-color: #000;
+        height: 3px;
+        width: 50px;
+        position: absolute;
+        top: 50px;
+        left: 60px;
+      }
+    }
+    p {
+      color: #6b6d6f;
+    }
+    .row {
+      .service-card {
+        margin: 30px 0;
+        line-height: 1.5rem;
+        img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+////////////// HAPPY-CLIENT-SECTION //////////
+
+.happy-client-section {
+  background-color: #7db9e8;
+  .all-happy-client-section {
+    padding: 5% 0;
+    text-align: center;
+    color: #fff;
+    .text-under {
+      display: inline-block;
+      width: 50px;
+      background-color: #fff;
+      height: 3px;
+      content: "";
+      margin: 30px 0;
+    }
+    .happy-client-down {
+      margin-top: 40px;
+      .happy-client-icon {
+        margin-right: 10px;
+        padding: 2px;
+        display: inline-block;
+        background-color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        i{
+          font-size: 40px;
+          color: #7db9e8;
+          border: 5px solid #b3daf7;
+          border-radius: 100%;
+          padding: 8px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 574px){
+    .all-happy-client-section{
+      .happy-client-down{
+        text-align: start;
+        .client-card{
+          display: flex;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+///////////// LASTEST NEWS SECTION ///////////
+
+
+.all-lastest-news-section{
+  text-align: center;
+  padding: 5% 0;
+  .text-under {
+    display: inline-block;
+    width: 50px;
+    background-color: #000;
+    height: 3px;
+    content: "";
+    margin: 30px 0;
+  }
+  .search-sort{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    input{
+      width: 800px;
+    }
+  }
+  .news-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    .news-img{
+      transition: 1.3s;
+      width: 100%;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+
+///////////// ADD USER PAGE ////////////
+
+
+.add-user-text{
+  text-align: center;
+}

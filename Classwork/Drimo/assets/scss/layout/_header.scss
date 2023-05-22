@@ -1,0 +1,38 @@
+header{
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    .header{
+        padding: 2% 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            display: flex;
+            align-items: center;
+            ul{
+                margin: 0;
+                display: flex;
+                gap: 50px;
+            }
+            .menu-btn{
+                display: none;
+            }
+        }
+    }
+    @media only screen and (max-width: 991px){
+        .header{
+            nav{
+                ul{
+                    display: none;
+                }
+                .menu-btn{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
