@@ -1,0 +1,12 @@
+.fav-text {
+    padding: 5% 0;
+  text-align: center;
+  .card-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      .card{
+          margin-top: 30px;
+      }
+  }
+}

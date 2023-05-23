@@ -1,0 +1,63 @@
+.all-children-sec {
+  background-color: #f8f9fa;
+  padding: 5%;
+  .children-sec {
+    text-align: center;
+    .description-waiting-children {
+      font-size: 18px;
+      color: $gray-color;
+    }
+    .find-btn {
+      @extend %primary-btn;
+      margin-bottom: 30px;
+    }
+    .all-cards {
+      .children-card {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          text-align: start;
+          img {
+            width: 100%;
+            height: 350px;
+            margin-bottom: 20px;
+          }
+          p {
+            margin-left: 20px;
+          }
+          .buttons {
+            display: flex;
+            justify-content: space-around;
+            .edit-btn {
+              background-color: rgb(178, 200, 241);
+              // margin-left: 20px;
+            }
+            .fav-btn {
+              background-color: rgb(254, 171, 111);
+            }
+            .delete-btn {
+              background-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+    .search-sort {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 700px;
+      }
+      button {
+        width: 200px;
+      }
+    }
+    .load-btn {
+      @extend %primary-btn;
+      margin-bottom: 30px;
+    }
+  }
+}

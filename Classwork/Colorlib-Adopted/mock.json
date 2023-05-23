@@ -1,0 +1,78 @@
+{
+  "children": [
+    {
+      "name": "Mark",
+      "years": 12,
+      "photo": "./assets/images/children_3.jpg",
+      "id": 1
+    },
+    {
+      "name": "Jessy",
+      "years": "114",
+      "photo": "./assets/images/children_4.jpg",
+      "id": 2
+    },
+    {
+      "name": "Ben",
+      "years": 13,
+      "photo": "./assets/images/children_5.jpg",
+      "id": 3
+    },
+    {
+      "name": "Mark",
+      "years": 12,
+      "photo": "./assets/images/children_3.jpg",
+      "id": 4
+    },
+    {
+      "name": "Jessa",
+      "years": 114,
+      "photo": "./assets/images/children_4.jpg",
+      "id": 5
+    },
+    {
+      "name": "Ben",
+      "years": 13,
+      "photo": "./assets/images/children_5.jpg",
+      "id": 7
+    },
+    {
+      "name": "Jessa",
+      "years": 4,
+      "photo": "./assets/images/children_4.jpg",
+      "id": 15
+    },
+    {
+      "name": "Mark",
+      "years": 25,
+      "photo": "./assets/images/children_5.jpg",
+      "id": 17
+    },
+    {
+      "name": "Nes",
+      "years": "Barrera",
+      "photo": "./assets/images/children_2.jpg",
+      "id": 18
+    },
+    {
+      "name": "Germane",
+      "years": "Wright",
+      "photo": "./assets/images/children_5.jpg",
+      "id": 19
+    }
+  ],
+  "favdata": [
+    {
+      "name": "Jessa",
+      "years": 114,
+      "photo": "./assets/images/children_4.jpg",
+      "id": 2
+    },
+    {
+      "name": "Mark",
+      "years": 12,
+      "photo": "./assets/images/children_3.jpg",
+      "id": 1
+    }
+  ]
+}

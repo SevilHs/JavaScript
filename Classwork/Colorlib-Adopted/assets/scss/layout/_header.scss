@@ -1,0 +1,89 @@
+.header-top {
+  background-color: $primary-color;
+  .icons-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      ul {
+        display: flex;
+        gap: 15px;
+        margin: 0;
+      }
+    }
+    .sponsor-login {
+      display: flex;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 5px;
+        a {
+          color: $black-color;
+        }
+        &:hover {
+          a {
+            color: $white-color;
+          }
+          background-color: goldenrod;
+        }
+      }
+    }
+  }
+}
+.header-bottom {
+  background-color: $white-color;
+  .logo-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+    nav {
+    .menu-btn{
+        display: none;
+    }
+      ul {
+        display: flex;
+        gap: 20px;
+        li {
+          a {
+            color: $gray-color;
+          }
+          .dropdown {
+            #dropdownMenuButton1{
+              padding: 0;
+              vertical-align: 0;
+            }
+            button {
+              color: $gray-color;
+              padding: 0;
+              border: none;
+            }
+            .dropdown-menu {
+              display: none;
+              flex-direction: column;
+            }
+            &:hover {
+              .dropdown-menu {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+@media only screen and (max-width: 992px){
+    .logo-sections{
+        nav{
+            .menu-btn{
+                display: block;
+            }
+            ul{
+                display: none;
+            }
+        }
+        
+    }
+  }
+}

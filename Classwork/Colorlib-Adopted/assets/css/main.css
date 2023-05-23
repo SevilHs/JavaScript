@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box;
+}
+
+.all-children-sec .children-sec .load-btn, .all-children-sec .children-sec .find-btn, .all-about-sec .about-sec .about-left button, .all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .white-text .boy-text .home-btn, .all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .black-text .girl-text .home-btn {
+  border-radius: 5px;
+  background-color: #bc5148;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
+.all-children-sec .children-sec .load-btn:hover, .all-children-sec .children-sec .find-btn:hover, .all-about-sec .about-sec .about-left button:hover, .all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .white-text .boy-text .home-btn:hover, .all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .black-text .girl-text .home-btn:hover {
+  opacity: 0.7;
+}
+
+.header-top {
+  background-color: #bc5148;
+}
+.header-top .icons-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top .icons-text nav ul {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+.header-top .icons-text .sponsor-login {
+  display: flex;
+}
+.header-top .icons-text .sponsor-login span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 5px;
+}
+.header-top .icons-text .sponsor-login span a {
+  color: #000;
+}
+.header-top .icons-text .sponsor-login span:hover {
+  background-color: goldenrod;
+}
+.header-top .icons-text .sponsor-login span:hover a {
+  color: #fff;
+}
+
+.header-bottom {
+  background-color: #fff;
+}
+.header-bottom .logo-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0;
+}
+.header-bottom .logo-sections nav .menu-btn {
+  display: none;
+}
+.header-bottom .logo-sections nav ul {
+  display: flex;
+  gap: 20px;
+}
+.header-bottom .logo-sections nav ul li a {
+  color: #ababab;
+}
+.header-bottom .logo-sections nav ul li .dropdown #dropdownMenuButton1 {
+  padding: 0;
+  vertical-align: 0;
+}
+.header-bottom .logo-sections nav ul li .dropdown button {
+  color: #ababab;
+  padding: 0;
+  border: none;
+}
+.header-bottom .logo-sections nav ul li .dropdown .dropdown-menu {
+  display: none;
+  flex-direction: column;
+}
+.header-bottom .logo-sections nav ul li .dropdown:hover .dropdown-menu {
+  display: block;
+}
+@media only screen and (max-width: 992px) {
+  .header-bottom .logo-sections nav .menu-btn {
+    display: block;
+  }
+  .header-bottom .logo-sections nav ul {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #bc5148;
+}
+footer .footer {
+  text-align: center;
+  padding: 2% 0;
+}
+
+.all-home-section {
+  height: 80vh;
+}
+.all-home-section #carouselExampleIndicators .circle-btn {
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item img {
+  height: 80vh;
+  width: 100%;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .black-text .girl-text {
+  text-align: start;
+  color: #000;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .black-text .girl-text span {
+  font-family: "Sacramento", cursive;
+  font-size: 36px;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .black-text .girl-text h2 {
+  font-weight: 700;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .black-text .girl-text p {
+  font-size: 20px;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .white-text .boy-text {
+  text-align: start;
+  color: #fff;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .white-text .boy-text span {
+  font-family: "Sacramento", cursive;
+  font-size: 36px;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .white-text .boy-text h2 {
+  font-weight: 700;
+}
+.all-home-section #carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption .white-text .boy-text p {
+  font-size: 20px;
+}
+.all-about-sec .about-sec {
+  padding: 4% 0;
+}
+.all-about-sec .about-sec .about-left {
+  margin-bottom: 40px;
+}
+.all-about-sec .about-sec .about-left img {
+  width: 100%;
+}
+.all-about-sec .about-sec .about-left p {
+  color: #ababab;
+  margin: 30px 0;
+}
+.all-about-sec .about-sec .about-left button {
+  background-color: #fff;
+  color: #bc5148;
+  border: 1px solid #bc5148;
+}
+.all-about-sec .about-sec .about-left button:hover {
+  background-color: #bc5148;
+  color: #fff;
+  opacity: 1;
+}
+.all-about-sec .about-sec .about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+.all-about-sec .about-sec .about-right #accordionExample .accordion-button:focus {
+  border-color: #ababab;
+  box-shadow: 0 0.2rem 1rem 0.1rem rgba(201, 201, 201, 0.996);
+}
+.all-about-sec .about-sec .about-right #accordionExample .accordion-button:not(.collapsed) {
+  border: none;
+  background-color: transparent;
+  color: #bc5148;
+}
+.all-about-sec .about-sec .about-right #accordionExample .accordion-body {
+  color: #ababab;
+}
+
+.all-children-sec {
+  background-color: #f8f9fa;
+  padding: 5%;
+}
+.all-children-sec .children-sec {
+  text-align: center;
+}
+.all-children-sec .children-sec .description-waiting-children {
+  font-size: 18px;
+  color: #ababab;
+}
+.all-children-sec .children-sec .find-btn {
+  margin-bottom: 30px;
+}
+.all-children-sec .children-sec .all-cards .children-card {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-children-sec .children-sec .all-cards .children-card div {
+  text-align: start;
+}
+.all-children-sec .children-sec .all-cards .children-card div img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 20px;
+}
+.all-children-sec .children-sec .all-cards .children-card div p {
+  margin-left: 20px;
+}
+.all-children-sec .children-sec .all-cards .children-card div .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.all-children-sec .children-sec .all-cards .children-card div .buttons .edit-btn {
+  background-color: rgb(178, 200, 241);
+}
+.all-children-sec .children-sec .all-cards .children-card div .buttons .fav-btn {
+  background-color: rgb(254, 171, 111);
+}
+.all-children-sec .children-sec .all-cards .children-card div .buttons .delete-btn {
+  background-color: #bc5148;
+}
+.all-children-sec .children-sec .search-sort {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.all-children-sec .children-sec .search-sort input {
+  width: 700px;
+}
+.all-children-sec .children-sec .search-sort button {
+  width: 200px;
+}
+.all-children-sec .children-sec .load-btn {
+  margin-bottom: 30px;
+}
+
+.all-featured-sec .featured-sec {
+  text-align: center;
+  padding: 5% 0;
+}
+.all-featured-sec .featured-sec .card-img-div {
+  height: 400px;
+  background-image: url("../images/work_thumb_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  transition: 3s;
+}
+.all-featured-sec .featured-sec .card-img-div .img-text {
+  width: 100%;
+  height: 400px;
+  display: none;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+}
+.all-featured-sec .featured-sec .card-img-div:hover {
+  background-size: 135%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.all-featured-sec .featured-sec .card-img-div:hover .img-text {
+  display: flex;
+  opacity: 0.7;
+}
+.all-featured-sec .featured-sec .card-img-div2 {
+  height: 400px;
+  background-image: url("../images/work_thumb_2.jpg");
+  background-size: cover;
+  transition: 3s;
+  padding: 0;
+}
+.all-featured-sec .featured-sec .card-img-div2 .img-text {
+  margin: 0;
+  width: 100%;
+  height: 400px;
+  display: none;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+}
+.all-featured-sec .featured-sec .card-img-div2:hover {
+  background-size: 135%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.all-featured-sec .featured-sec .card-img-div2:hover .img-text {
+  display: flex;
+  opacity: 0.7;
+}
+.all-featured-sec .featured-sec .card-img-div3 {
+  padding: 0;
+  height: 400px;
+  background-image: url("../images/work_thumb_3.jpg");
+  background-size: cover;
+  transition: 3s;
+}
+.all-featured-sec .featured-sec .card-img-div3 .img-text {
+  margin: 0;
+  width: 100%;
+  height: 400px;
+  display: none;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+}
+.all-featured-sec .featured-sec .card-img-div3:hover {
+  background-size: 135%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.all-featured-sec .featured-sec .card-img-div3:hover .img-text {
+  display: flex;
+  opacity: 0.7;
+}
+
+.fav-text {
+  padding: 5% 0;
+  text-align: center;
+}
+.fav-text .card-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fav-text .card-div .card {
+  margin-top: 30px;
+}
+
+.fav-text {
+  padding: 5% 0;
+  text-align: center;
+}
+.fav-text .card-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fav-text .card-div .card {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */
