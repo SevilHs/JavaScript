@@ -1,0 +1,40 @@
+.all-mission-sec {
+  background-image: url("../images/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 9% ;
+  .row {
+    // column-gap: 0;
+    --bs-gutter-x: 0;
+    .mission-left {
+      max-height: 550px;
+      padding: 11%;
+      background-color: $primary-color;
+      color: $white-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      h1 {
+        font-weight: 300;
+      }
+      a {
+        background-color: $secondary-color;
+        padding: 10px 18px;
+        color: $primary-color;
+      }
+    }
+    .mission-right {
+      max-height: 550px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width:768px){
+    .row{
+        flex-direction: column-reverse;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.all-pricing-sec {
+  background-image: url(../images/background1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5%;
+  .flower-pricing-sec {
+    text-align: center;
+    color: $primary-color;
+    p {
+      font-style: italic;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 300;
+    }
+    .search-sort{
+      display: flex;
+      justify-content: space-around;
+      input{
+        width: 700px;
+      }
+      .sort-btn{
+        background-color: rgb(98, 145, 105);
+        color: $white-color;
+        width: 150px;
+      }
+    }
+    .row {
+        margin-top: 50px;
+      .card-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card {
+          max-width: 320px;
+          background-color: transparent;
+          border: none;
+          img {
+            max-height: 350px;
+          }
+          .card-body {
+            .buttons {
+              .edit-btn {
+                color: $white-color;
+                background-color: rgb(255, 143, 255);
+              }
+              .fav-btn {
+                color: $white-color;
+                background-color: rgb(184, 127, 238);
+              }
+              .delete-btn {
+                color: $white-color;
+                background-color: rgb(161, 194, 243);
+              }
+            }
+          }
+        }
+      }
+    }
+    .load-more-btn{
+      background-color: rgb(118, 148, 118);
+      color: $white-color;
+      margin-top: 40px;
+    }
+  }
+  .events-pricing-sec{
+    padding: 5%;
+    text-align: center;
+    color: $primary-color;
+    p {
+      font-style: italic;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 300;
+    }
+    .row{
+        margin-top: 50px;
+        .card-div{
+          margin-bottom: 30px;
+            .card{
+                background-color: #FEF1E6;
+                padding: 13%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                align-items: center;
+                span{
+                    color: $primary-color;
+                    font-size: 28px;
+                    sub{
+                        font-size: 15px;
+                    }
+                }
+                h2{
+                    color: #000;
+                    font-weight: 200;
+                }
+                .description{
+                    font-size: 16px;
+                }
+                a{
+                    background-color: $secondary-color;
+                    padding: 10px;
+                    width: 120px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+  }
+}

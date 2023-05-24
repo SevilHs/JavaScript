@@ -1,0 +1,48 @@
+footer {
+  background-color: #e0ecdc;
+  padding: 3%;
+  color: $primary-color;
+  .signature-input{
+    img{
+        width: 100px;
+    }
+    .input-group{
+        
+        input{
+            background-color: transparent;
+            border:none;
+            border-bottom: 1px solid $primary-color;
+            border-radius: 0;
+            font-style: italic;
+            color: $primary-color;
+            outline: none;
+        }
+        button{
+            border: none;
+            background-color: $secondary-color;
+            border-bottom: 1px solid $primary-color;
+            border-radius: 0;
+            color: $primary-color;
+            &:hover{
+                background-color: #bccbb7;
+            }
+        }
+    }
+  }
+  .footer-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      p {
+        font-size: 18px;
+      }
+      li{
+          a{
+              color: $primary-color;
+              font-style: italic;
+          }
+      }
+    }
+  }
+}

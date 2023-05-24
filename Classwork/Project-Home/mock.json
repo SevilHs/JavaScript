@@ -1,0 +1,78 @@
+{
+  "flowers": [
+    {
+      "id": 1,
+      "name": "Dahlia",
+      "price": "25",
+      "photo": "./assets/images/b4.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mazus",
+      "price": "55",
+      "photo": "./assets/images/b2.jpg"
+    },
+    {
+      "name": "Pansies",
+      "price": "45",
+      "photo": "./assets/images/b3.jpg",
+      "id": 3
+    },
+    {
+      "id": 9,
+      "name": "Dahlia",
+      "price": "215",
+      "photo": "./assets/images/b4.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Mazus",
+      "price": "57",
+      "photo": "./assets/images/b2.jpg"
+    },
+    {
+      "name": "Pansies",
+      "price": "43",
+      "photo": "./assets/images/b3.jpg",
+      "id": 13
+    },
+    {
+      "id": 5,
+      "name": "Dahlia",
+      "price": "85",
+      "photo": "./assets/images/b4.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Mazus",
+      "price": "23",
+      "photo": "./assets/images/b2.jpg"
+    },
+    {
+      "name": "Pansies",
+      "price": "145",
+      "photo": "./assets/images/b3.jpg",
+      "id": 15
+    }
+  ],
+  "favdata": [
+    {
+      "name": "Pansies",
+      "price": "45",
+      "photo": "./assets/images/b3.jpg",
+      "id": 3
+    },
+    {
+      "id": 2,
+      "name": "Mazus",
+      "price": "55",
+      "photo": "./assets/images/b2.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Dahlia",
+      "price": "25",
+      "photo": "./assets/images/b4.jpg"
+    }
+  ]
+}
