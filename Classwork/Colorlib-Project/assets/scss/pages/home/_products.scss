@@ -1,0 +1,94 @@
+.all-products-sec {
+  padding: 5%;
+  .products-sec {
+    text-align: center;
+    .search-sort {
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      input {
+        max-width: 700px;
+        &:focus{
+            box-shadow: 2px 2px 12px 2px $primary-color;
+        }
+      }
+      button {
+        @extend %primary-btn;
+        border: none;
+        background-color: transparent;
+        &:hover {
+          background: rgb(138, 144, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(138, 144, 255, 1) 0%,
+            rgba(220, 144, 227, 1) 100%
+          );
+          color: $white-color;
+        }
+      }
+    }
+    .row {
+      .product-card {
+        margin-bottom: 30px;
+        .card-text {
+          // width: 100%;
+          padding: 7px;
+          background-color: rgb(236, 236, 236);
+          button,a {
+            @extend %primary-btn;
+            border: none;
+            background-color: transparent;
+          }
+          .buttons {
+            margin-top: 20px;
+            line-height: normal;
+            a {
+              @extend %primary-btn;
+              border: none;
+              color: #000;
+              background-color: transparent;
+            }
+          }
+        }
+        &:hover {
+          .card-text {
+            button,a {
+              background: rgb(138, 144, 255);
+              background: linear-gradient(
+                90deg,
+                rgba(138, 144, 255, 1) 0%,
+                rgba(220, 144, 227, 1) 100%
+              );
+              color: $white-color;
+            }
+            .buttons {
+              a {
+                background: rgb(138, 144, 255);
+                background: linear-gradient(
+                  90deg,
+                  rgba(138, 144, 255, 1) 0%,
+                  rgba(220, 144, 227, 1) 100%
+                );
+                color: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    .load-btn{
+        @extend %primary-btn;
+        border: none;
+        background-color: transparent;
+        &:hover {
+          background: rgb(138, 144, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(138, 144, 255, 1) 0%,
+            rgba(220, 144, 227, 1) 100%
+          );
+          color: $white-color;
+        }
+    }
+  }
+}

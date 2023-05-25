@@ -1,0 +1,33 @@
+.all-home-sec {
+  background-image: url(../images/banner-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 7%;
+  .home-sec {
+    .home-left {
+      color: $white-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-size: 60px;
+        font-weight: 400;
+      }
+      button {
+        @extend %primary-btn;
+        max-width: 150px;
+        &:hover {
+          background-color: $primary-color;
+          color: $white-color;
+          border: 1px solid $white-color;
+        }
+      }
+    }
+    .home-right {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

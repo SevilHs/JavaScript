@@ -1,0 +1,52 @@
+header{
+    padding: 1%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        nav{
+            .header-ul{
+                display: flex;
+                gap: 20px;
+                a{
+                    color: white;
+                }
+                .dropdown{
+                    .btn-secondary{
+                        padding: 0;
+                        vertical-align: 0;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                    }
+                    .dropdown-menu{
+                        display: none;
+
+                    }
+                    &:hover{
+                        .dropdown-menu{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .menu-btn{
+                display: none;
+            }
+        }
+    }
+    @media only screen and (max-width:992px){
+        .header{
+            nav{
+                .header-ul{
+                    display: none;
+                }
+                .menu-btn{
+                    display: block;
+                }
+            }
+        }
+    }
+}
