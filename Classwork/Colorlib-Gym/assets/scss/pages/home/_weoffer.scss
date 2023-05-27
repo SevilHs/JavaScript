@@ -1,0 +1,55 @@
+.we-offer-sec {
+  padding: 5%;
+  text-align: center;
+  .search-sort {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    input {
+      max-width: 700px;
+      &:focus {
+        box-shadow: none;
+        border: 1px solid #f6214b;
+      }
+    }
+    button {
+      border: none;
+      background-color: $primary-color;
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+  .we-offer-sec-div {
+    margin-top: 70px;
+    .we-offer-card {
+      box-shadow: 0 0 72px 0 #f5c7d1;
+      border-radius: 10px;
+      padding: 7%;
+      margin-bottom: 40px;
+      height: 300px;
+      p {
+        font-size: 14px;
+        color: gray;
+        margin: 20px 0;
+      }
+      .buttons {
+        .same {
+          border: 1px solid #fed1da;
+          border-radius: 7px;
+          background-color: transparent;
+          color: $primary-color;
+          padding: 5px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .load-more-btn {
+      border: none;
+      background-color: $primary-color;
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+  }
+}

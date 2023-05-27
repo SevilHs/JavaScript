@@ -1,0 +1,35 @@
+.join-sec{
+    background-image: url(../images/callto-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    // padding: 7%;
+    .join-sec-bg{
+
+        background-color: rgb(0, 0, 0, 0.7) ;
+        padding: 8%;
+        .join-sec-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            h1{
+                font-size: 48px;
+            }
+            p{
+                display: inline-block;
+                max-width:750px ;
+            }
+            .join-btn{
+                background-color: $primary-color;
+                padding: 15px;
+                border: none;
+                color: #fff;
+                border-radius: 50px;
+            }
+        }
+    }
+}

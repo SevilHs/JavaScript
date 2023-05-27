@@ -1,0 +1,156 @@
+.burger-modal{
+  background-color: rgb(0,0,0,0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 38px;
+  padding: 7%;
+  display: none;
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    li{
+      .dropdown {
+        button {
+          background-color: transparent;
+          border: none;
+          color: #fff;
+          padding: 0;
+          vertical-align: 0%;
+          outline: none;
+          font-size: 16px;
+          &:focus {
+            border: none;
+            box-shadow: none;
+          }
+        }
+        .dropdown-menu {
+          display: none;
+          border: none;
+          a {
+            color: #000;
+            &:hover {
+              color: $primary-color;
+              background-color: transparent;
+            }
+          }
+        }
+        &:hover {
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+      a{
+        color: #fff;
+      }
+    }
+    
+  }
+  @media only screen and (min-width:769px){
+    display: none !important;
+  }
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 55;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 5px gray;
+  .header-top {
+    border-bottom: 1px solid #ddd;
+    .header-top-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      i{
+        display: none;
+      }
+      p {
+        margin: 0;
+      }
+      a {
+        color: #000;
+        i {
+          font-size: 25px;
+          padding: 25px;
+          background-color: $primary-color;
+          color: #fff;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .header-bottom {
+    padding: 20px 0;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin: 0;
+      a {
+        color: #000;
+        font-size: 13px;
+        &:active, &:hover {
+          color: $primary-color;
+        }
+      }
+      .dropdown {
+        button {
+          background-color: transparent;
+          border: none;
+          color: #000;
+          padding: 0;
+          vertical-align: 0%;
+          outline: none;
+          font-size: 13px;
+          &:focus {
+            border: none;
+            box-shadow: none;
+          }
+        }
+        .dropdown-menu {
+          display: none;
+          border: none;
+          a {
+            &:hover {
+              color: $primary-color;
+              background-color: transparent;
+            }
+          }
+        }
+        &:hover {
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width:768px){
+    .header-top{
+      .header-top-div{
+        a{
+          display: none;
+        }
+        p{
+          display: none;
+        }
+        i{
+          display: block;
+        }
+      }
+    }
+    .header-bottom{
+      display: none;
+    }
+  }
+
+}
+

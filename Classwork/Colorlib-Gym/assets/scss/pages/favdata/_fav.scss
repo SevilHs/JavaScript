@@ -1,0 +1,15 @@
+.all-cards{
+    margin-top: 250px;
+    .card-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fav-card{
+            padding: 20px;
+            button{
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+    }
+}

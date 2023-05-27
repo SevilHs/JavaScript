@@ -1,0 +1,15 @@
+.add-edit-form{
+    margin-top: 199px;
+    form{
+        input{
+            &:focus{
+                box-shadow: 0 0 12px 5px rgb(254, 156, 156);
+                border: none;
+            }
+        }
+        button{
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+}

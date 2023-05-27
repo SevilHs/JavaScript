@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.burger-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 38px;
+  padding: 7%;
+  display: none;
+}
+.burger-modal ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.burger-modal ul li .dropdown button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 0;
+  vertical-align: 0%;
+  outline: none;
+  font-size: 16px;
+}
+.burger-modal ul li .dropdown button:focus {
+  border: none;
+  box-shadow: none;
+}
+.burger-modal ul li .dropdown .dropdown-menu {
+  display: none;
+  border: none;
+}
+.burger-modal ul li .dropdown .dropdown-menu a {
+  color: #000;
+}
+.burger-modal ul li .dropdown .dropdown-menu a:hover {
+  color: #F6214B;
+  background-color: transparent;
+}
+.burger-modal ul li .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.burger-modal ul li a {
+  color: #fff;
+}
+@media only screen and (min-width: 769px) {
+  .burger-modal {
+    display: none !important;
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 55;
+  background-color: #fff;
+  box-shadow: 0px 0px 12px 5px gray;
+}
+header .header-top {
+  border-bottom: 1px solid #ddd;
+}
+header .header-top .header-top-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-top .header-top-div i {
+  display: none;
+}
+header .header-top .header-top-div p {
+  margin: 0;
+}
+header .header-top .header-top-div a {
+  color: #000;
+}
+header .header-top .header-top-div a i {
+  font-size: 25px;
+  padding: 25px;
+  background-color: #F6214B;
+  color: #fff;
+  margin-left: 10px;
+}
+header .header-bottom {
+  padding: 20px 0;
+}
+header .header-bottom ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+}
+header .header-bottom ul a {
+  color: #000;
+  font-size: 13px;
+}
+header .header-bottom ul a:active, header .header-bottom ul a:hover {
+  color: #F6214B;
+}
+header .header-bottom ul .dropdown button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  padding: 0;
+  vertical-align: 0%;
+  outline: none;
+  font-size: 13px;
+}
+header .header-bottom ul .dropdown button:focus {
+  border: none;
+  box-shadow: none;
+}
+header .header-bottom ul .dropdown .dropdown-menu {
+  display: none;
+  border: none;
+}
+header .header-bottom ul .dropdown .dropdown-menu a:hover {
+  color: #F6214B;
+  background-color: transparent;
+}
+header .header-bottom ul .dropdown:hover .dropdown-menu {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  header .header-top .header-top-div a {
+    display: none;
+  }
+  header .header-top .header-top-div p {
+    display: none;
+  }
+  header .header-top .header-top-div i {
+    display: block;
+  }
+  header .header-bottom {
+    display: none;
+  }
+}
+
+footer {
+  padding: 1%;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer p {
+  margin: 0;
+}
+footer .footer p a {
+  color: #F6214B;
+}
+footer .footer nav ul {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+footer .footer nav ul a {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer nav ul a i {
+  color: #ddd;
+}
+@media only screen and (max-width: 992px) {
+  footer .footer {
+    flex-direction: column;
+  }
+}
+
+.arrow-up i {
+  background-color: #F6214B;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 8888;
+}
+
+.home-sec {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 110px;
+}
+.home-sec .home-sec-div {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 80vh;
+}
+.home-sec .home-sec-div h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .home-sec {
+    margin-top: 38px;
+  }
+}
+
+.we-offer-sec {
+  padding: 5%;
+  text-align: center;
+}
+.we-offer-sec .search-sort {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.we-offer-sec .search-sort input {
+  max-width: 700px;
+}
+.we-offer-sec .search-sort input:focus {
+  box-shadow: none;
+  border: 1px solid #f6214b;
+}
+.we-offer-sec .search-sort button {
+  border: none;
+  background-color: #F6214B;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.we-offer-sec .we-offer-sec-div {
+  margin-top: 70px;
+}
+.we-offer-sec .we-offer-sec-div .we-offer-card {
+  box-shadow: 0 0 72px 0 #f5c7d1;
+  border-radius: 10px;
+  padding: 7%;
+  margin-bottom: 40px;
+  height: 300px;
+}
+.we-offer-sec .we-offer-sec-div .we-offer-card p {
+  font-size: 14px;
+  color: gray;
+  margin: 20px 0;
+}
+.we-offer-sec .we-offer-sec-div .we-offer-card .buttons .same {
+  border: 1px solid #fed1da;
+  border-radius: 7px;
+  background-color: transparent;
+  color: #F6214B;
+  padding: 5px;
+  line-height: normal;
+}
+.we-offer-sec .load-more-btn {
+  border: none;
+  background-color: #F6214B;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.courses-sec {
+  padding: 5% 0;
+}
+.courses-sec .courses-sec-div {
+  text-align: center;
+}
+.courses-sec .courses-sec-div p {
+  color: gray;
+}
+.courses-sec .courses-sec-div .row .card-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.courses-sec .courses-sec-div .row .card-div .course-card {
+  max-width: 350px;
+}
+.courses-sec .courses-sec-div .row .card-div .course-card .course-card-img {
+  overflow: hidden;
+  position: relative;
+}
+.courses-sec .courses-sec-div .row .card-div .course-card .course-card-img img {
+  width: 100%;
+  transition: 1.5s;
+}
+.courses-sec .courses-sec-div .row .card-div .course-card .course-card-img img:hover {
+  transform: scale(1.2);
+}
+.courses-sec .courses-sec-div .row .card-div .course-card .course-card-img .course-img-text {
+  position: absolute;
+  z-index: 15;
+  background-color: #F6214B;
+  bottom: 20px;
+  left: 30px;
+  color: #fff;
+  padding: 10px 15px;
+}
+.courses-sec .courses-sec-div .row .card-div .course-card .course-text {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+.courses-sec .courses-sec-div .row .card-div .course-card .course-text span {
+  color: #F6214B;
+}
+
+.join-sec {
+  background-image: url(../images/callto-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+.join-sec .join-sec-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8%;
+}
+.join-sec .join-sec-bg .join-sec-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.join-sec .join-sec-bg .join-sec-div h1 {
+  font-size: 48px;
+}
+.join-sec .join-sec-bg .join-sec-div p {
+  display: inline-block;
+  max-width: 750px;
+}
+.join-sec .join-sec-bg .join-sec-div .join-btn {
+  background-color: #F6214B;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.add-edit-form {
+  margin-top: 199px;
+}
+.add-edit-form form input:focus {
+  box-shadow: 0 0 12px 5px rgb(254, 156, 156);
+  border: none;
+}
+.add-edit-form form button {
+  background-color: #F6214B;
+  color: #fff;
+}
+
+.all-cards {
+  margin-top: 250px;
+}
+.all-cards .card-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-cards .card-div .fav-card {
+  padding: 20px;
+}
+.all-cards .card-div .fav-card button {
+  background-color: #F6214B;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */
