@@ -1,22 +1,10 @@
 {
   "gym": [
     {
-      "id": 1,
-      "title": "Regular Exercise",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      "photo": "./assets/images/default.png"
-    },
-    {
       "id": 107,
-      "title": "a2Regular Exercise",
+      "title": "za2Regular Exercise",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       "photo": "./assets/images/o1.png"
-    },
-    {
-      "id": 97,
-      "title": "c2Training on the go",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      "photo": "./assets/images/o2.png"
     },
     {
       "id": 47,
@@ -45,22 +33,10 @@
   ],
   "gymcard": [
     {
-      "id": 1,
-      "title": "Regular Exercise",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      "photo": "./assets/images/default.png"
-    },
-    {
       "id": 107,
       "title": "a2Regular Exercise",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
       "photo": "./assets/images/o1.png"
-    },
-    {
-      "id": 97,
-      "title": "c2Training on the go",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
-      "photo": "./assets/images/o2.png"
     },
     {
       "title": "Quo dolorum illo bea",
