@@ -1,0 +1,13 @@
+%primary-btn{
+    padding: 15px;
+    background-color: $primary-color;
+    color: $white-color;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    &:hover{
+        background-color: $white-color;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        transition: 0.5s;
+    }
+}

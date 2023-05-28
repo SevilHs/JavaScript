@@ -1,0 +1,21 @@
+.best-seller-sec{
+    padding: 5%;
+    p {
+        font-weight: 500;
+        color: gray;
+      }
+      h1 {
+        span {
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $primary-color;
+            top: 130%;
+            left: 0;
+          }
+        }
+      }
+}

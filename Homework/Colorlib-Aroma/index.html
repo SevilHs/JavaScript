@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css  " />
+    <title>Aroma Shop</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <img src="./assets/images/logo.png" alt="header-logo" />
+          <nav>
+            <ul class="header-list">
+              <li><a href="">Home</a></li>
+              <li>
+                <div class="dropdown">
+                  <div
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Shop
+                  </div>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Shop Category</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Product Details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Product Checkout</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Confirmation</a></li>
+                    <li><a class="dropdown-item" href="#">Shopping Card</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <div
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </div>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <div
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </div>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li>
+                      <a class="dropdown-item" href="addedit.html">Add Card</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="fav.html">Fav Data</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-right">
+            <label for="search"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></label>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <button>Buy Now</button>
+          </div>
+          <i class="fa-solid fa-bars menu-btn"></i>
+        </div>
+      </div>
+    </header>
+    <!-- HOME SECTION -->
+    <section class="home-sec">
+      <div class="container">
+        <div class="home-sec-div row">
+          <img
+            class="col col-sm-6"
+            src="./assets/images/hero-banner.png"
+            alt="hero-banner"
+          />
+          <div class="col col-sm-6 home-text-div">
+            <h2>Shop is fun</h2>
+            <h1>BROWSE OUR PREMIUM PRODUCT</h1>
+            <p>
+              Us which over of signs divide dominion deep fill bring they're
+              meat beho upon own earth without morning over third. Their male
+              dry. They are great appear whose land fly grass.
+            </p>
+            <button>Browse Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRODUCT SECTION -->
+    <section class="product-sec">
+      <div class="container">
+        <div class="product-sec-div">
+          <p>Popular Item in the market</p>
+          <h1>Trending <span>Product</span></h1>
+          <div class="search-sort">
+            <input
+              type="search"
+              id="search"
+              class="form-control"
+              placeholder="Search..."
+            />
+            <button id="sortBtn">Ascending</button>
+          </div>
+          <div class="row product-cards">
+            <!-- <div class="col col-md-6 col-lg-4 col-xl-3 product-card">
+              <div class="product-card-div">
+                <div class="img-div">
+                  <img src="./assets/images/product1.png" alt="product-img" />
+                  <div class="actions">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <p>Accessories</p>
+                <h5>Quartz Belt Watch</h5>
+                <span>$150.00</span>
+              </div>
+            </div> -->
+          </div>
+          <button id="loadMoreBtn">Load More</button>
+        </div>
+      </div>
+    </section>
+    <!-- WINTER SALE SECTION -->
+    <div class="sale-sec">
+      <div class="container">
+        <div class="sale-sec-div row">
+          <div class="col col-xl-6 col-sm-12">
+            <h1>Up To 50% Off</h1>
+            <h2>Winter Sale</h2>
+            <p>Him she'd let them sixth saw light</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BEST SELLER SECTION -->
+    <div class="best-seller-sec">
+      <div class="container">
+        <p>Popular Item in the market</p>
+          <h1>Best <span>Sellers</span></h1>
+        <div class="row">
+          <div class="col col-md-6 col-lg-4 col-xl-3 product-card">
+            <div class="product-card-div">
+              <div class="img-div">
+                <img src="./assets/images/product1.png" alt="product-img" />
+                <div class="actions">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <p>Accessories</p>
+              <h5>Quartz Belt Watch</h5>
+              <span>$150.00</span>
+            </div>
+          </div>
+          <div class="col col-md-6 col-lg-4 col-xl-3 product-card">
+            <div class="product-card-div">
+              <div class="img-div">
+                <img src="./assets/images/product2.png" alt="product-img" />
+                <div class="actions">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <p>Accessories</p>
+              <h5>Quartz Belt Watch</h5>
+              <span>$150.00</span>
+            </div>
+          </div>
+          <div class="col col-md-6 col-lg-4 col-xl-3 product-card">
+            <div class="product-card-div">
+              <div class="img-div">
+                <img src="./assets/images/product3.png" alt="product-img" />
+                <div class="actions">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <p>Accessories</p>
+              <h5>Quartz Belt Watch</h5>
+              <span>$150.00</span>
+            </div>
+          </div>
+          <div class="col col-md-6 col-lg-4 col-xl-3 product-card">
+            <div class="product-card-div">
+              <div class="img-div">
+                <img src="./assets/images/product4.png" alt="product-img" />
+                <div class="actions">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <p>Accessories</p>
+              <h5>Quartz Belt Watch</h5>
+              <span>$150.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

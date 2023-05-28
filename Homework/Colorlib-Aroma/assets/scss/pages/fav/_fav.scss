@@ -1,0 +1,50 @@
+.row {
+    text-align: center;
+    margin: 100px 0;
+    .product-card {
+      margin-bottom: 30px;
+      .product-card-div {
+        .img-div {
+          overflow: hidden;
+          display: inline-block;
+          position: relative;
+          .actions {
+            padding: 20px;
+            background-color: rgba(236, 236, 236, 0.53);
+            position: absolute;
+            bottom: 0;
+            transition: 0.5s;
+            transform: translateY(130%);
+            transition-timing-function: ease-in;
+            width: 100%;
+            @include dflex();
+            gap: 20px;
+            .product-icon {
+              background-color: $primary-color;
+              opacity: 0.5;
+              padding: 10px;
+              color: $white-color;
+              cursor: pointer;
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        .product-price {
+          font-weight: 600;
+          font-size: 20px;
+          color: gray;
+        }
+        &:hover {
+          .img-div {
+            .actions {
+              transition: 0.5s;
+              transform: translateY(0);
+              transition-timing-function: ease-out;
+            }
+          }
+        }
+      }
+    }
+  }

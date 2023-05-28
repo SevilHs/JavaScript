@@ -1,0 +1,11 @@
+.sale-sec{
+    background-image: url("../images/parallax-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: center;
+    padding: 4%;
+    button{
+        @extend %primary-btn;
+        padding: 10px 20px;
+    }
+}

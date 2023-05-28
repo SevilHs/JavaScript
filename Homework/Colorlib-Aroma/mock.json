@@ -1,0 +1,104 @@
+{
+  "aroma": [
+    {
+      "id": 1,
+      "photo": "./assets/images/product1.png",
+      "title": "Accessories ",
+      "name": "Quartz Belt Watch",
+      "price": "150"
+    },
+    {
+      "id": 2,
+      "photo": "./assets/images/product2.png",
+      "title": "Beauty",
+      "name": "Women Freshwash",
+      "price": "250"
+    },
+    {
+      "id": 3,
+      "photo": "./assets/images/product3.png",
+      "title": "Decor",
+      "name": "Room Flash Light",
+      "price": 25
+    },
+    {
+      "id": 4,
+      "photo": "./assets/images/product4.png",
+      "title": "Decor",
+      "name": "Room Flash Light",
+      "price": "155"
+    },
+    {
+      "id": 5,
+      "photo": "./assets/images/product5.png",
+      "title": "Accessories",
+      "name": "Man Office Bag",
+      "price": 75
+    },
+    {
+      "id": 6,
+      "photo": "./assets/images/product6.png",
+      "title": "Kids Toy",
+      "name": "Charging Car",
+      "price": 35
+    },
+    {
+      "id": 7,
+      "photo": "./assets/images/product7.png",
+      "title": "Accessories",
+      "name": "Blutooth Speaker",
+      "price": 405
+    },
+    {
+      "id": 8,
+      "photo": "./assets/images/product8.png",
+      "title": "Kids Toy",
+      "name": "Charging Car",
+      "price": 50
+    },
+    {
+      "title": "test",
+      "name": "s",
+      "price": "96",
+      "photo": "./assets/images/product3.png",
+      "id": 9
+    }
+  ],
+  "aromafav": [
+    {
+      "id": 1,
+      "photo": "./assets/images/product1.png",
+      "title": "Accessories ",
+      "name": "Quartz Belt Watch",
+      "price": "150"
+    },
+    {
+      "id": 2,
+      "photo": "./assets/images/product2.png",
+      "title": "Beauty",
+      "name": "Women Freshwash",
+      "price": "250"
+    },
+    {
+      "id": 3,
+      "photo": "./assets/images/product3.png",
+      "title": "Decor",
+      "name": "Room Flash Light",
+      "price": 25
+    },
+    {
+      "id": 7,
+      "photo": "./assets/images/product7.png",
+      "title": "Accessories",
+      "name": "Blutooth Speaker",
+      "price": 405
+    },
+    {
+      "id": 6,
+      "photo": "./assets/images/product6.png",
+      "title": "Kids Toy",
+      "name": "Charging Car",
+      "price": 35
+    }
+  ]
+}
