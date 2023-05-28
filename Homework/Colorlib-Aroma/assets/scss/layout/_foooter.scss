@@ -1,0 +1,6 @@
+footer{
+    padding: 1%;
+    .footer{
+        @include dflex()
+    }
+}

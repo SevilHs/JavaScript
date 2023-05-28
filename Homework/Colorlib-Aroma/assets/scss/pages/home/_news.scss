@@ -1,0 +1,48 @@
+.blog-sec {
+  padding: 5%;
+  .blog-sec-div {
+    p {
+      font-weight: 500;
+      color: gray;
+    }
+    h1 {
+      span {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: $primary-color;
+          top: 130%;
+          left: 0;
+        }
+      }
+    }
+    .row {
+      text-align: start;
+      .card-div {
+        width: 100%;
+        margin-bottom: 40px;
+        img {
+          margin-bottom: 30px;
+          width: 100%;
+        }
+        a {
+          color: $black-color;
+          display: inline-block;
+        }
+        .title-card{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 20px 0  ;
+        }
+        &:hover {
+          a {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

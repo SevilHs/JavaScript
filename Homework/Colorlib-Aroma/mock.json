@@ -23,8 +23,8 @@
     },
     {
       "id": 4,
-      "photo": "./assets/images/product4.png",
-      "title": "Decor",
+      "photo": "./assets/images/product1.png",
+      "title": "Decor test",
       "name": "Room Flash Light",
       "price": "155"
     },
@@ -99,6 +99,13 @@
       "title": "Kids Toy",
       "name": "Charging Car",
       "price": 35
+    },
+    {
+      "id": 4,
+      "photo": "./assets/images/product1.png",
+      "title": "Decor test",
+      "name": "Room Flash Light",
+      "price": "155"
     }
   ]
 }
