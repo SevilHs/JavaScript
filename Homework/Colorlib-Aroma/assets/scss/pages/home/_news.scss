@@ -37,9 +37,31 @@
             font-weight: 500;
             margin: 20px 0  ;
         }
+        .read-arrow {
+          overflow: hidden;
+          position: relative;
+          a {
+            i {
+              position: absolute;
+              top: 5px;
+              transition: 0.3s;
+              transform: translate(50%);
+              transition-timing-function: ease-in;
+            }
+          }
+        }
         &:hover {
           a {
             color: $primary-color;
+          }
+          .read-arrow {
+            a {
+              i {
+                transition: 0.3s;
+                transform: translate(100%);
+                transition-timing-function: ease-out;
+              }
+            }
           }
         }
       }

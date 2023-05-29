@@ -88,12 +88,14 @@ header .header .header-right button:hover {
 }
 
 footer {
+  background-color: rgb(0, 0, 54);
   padding: 1%;
 }
 footer .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .home-sec {
@@ -301,8 +303,24 @@ footer .footer {
   font-weight: 500;
   margin: 20px 0;
 }
+.blog-sec .blog-sec-div .row .card-div .read-arrow {
+  overflow: hidden;
+  position: relative;
+}
+.blog-sec .blog-sec-div .row .card-div .read-arrow a i {
+  position: absolute;
+  top: 5px;
+  transition: 0.3s;
+  transform: translate(50%);
+  transition-timing-function: ease-in;
+}
 .blog-sec .blog-sec-div .row .card-div:hover a {
   color: #384aeb;
+}
+.blog-sec .blog-sec-div .row .card-div:hover .read-arrow a i {
+  transition: 0.3s;
+  transform: translate(100%);
+  transition-timing-function: ease-out;
 }
 
 .row {

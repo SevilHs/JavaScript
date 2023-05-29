@@ -5,6 +5,7 @@ let row = document.querySelector(".product-cards");
 let search = document.querySelector("#search");
 let sort = document.querySelector("#sortBtn");
 let load = document.querySelector("#loadMoreBtn");
+let header=document.querySelector('header')
 
 let allData = [];
 let filtered = [];
@@ -107,3 +108,16 @@ sort.addEventListener("click", (e) => {
 });
 
 
+function scrollFunc(){
+  if(document.body.scrollTop>100 || document.documentElement.scrollTop>100){
+    header.style.backgroundColor="white";
+    header.style.position="fixed";
+    header.style.width="100%";
+    header.style.zIndex=4654;
+  }else{
+    header.style.backgroundColor="transparent";
+    header.style.position="static";
+  }
+}
+
+window.onscroll=function (){scrollFunc()}
